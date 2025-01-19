@@ -15,7 +15,9 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -35,9 +37,9 @@
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
       <a href="index.html" class="logo d-flex align-items-center me-auto">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="sitename">AC.</h1>
+        <div class="container text-center">
+          <img src="assets/img/logo-andre-camillo.jpg" alt="Logo" style="max-width: 200px; width: 145%; height: 255px">
+        </div>
       </a>
 
       <nav id="navmenu" class="navmenu">
@@ -47,10 +49,12 @@
           <li><a href="#services">Serviços</a></li>
           <li><a href="#portfolio">Portfólio</a></li>
           <li><a href="#team">Equipe</a></li>
-          <li class="dropdown"><a href="#"><span>Experiências</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li class="dropdown"><a href="#"><span>Experiências</span> <i
+                class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i
+                    class="bi bi-chevron-down toggle-dropdown"></i></a>
                 <ul>
                   <li><a href="#">Deep Dropdown 1</a></li>
                   <li><a href="#">Deep Dropdown 2</a></li>
@@ -94,40 +98,71 @@
           <a href="#about" class="btn-get-started">Saiba Mais</a>
         </div>
 
+        <style>
+          .icon-box {
+            text-align: center;
+            /* Centraliza o texto */
+          }
+
+          .icon-box .icon {
+            margin-bottom: 15px;
+            /* Espaçamento entre o ícone e o texto */
+            font-size: 2rem;
+            /* Ajusta o tamanho do ícone */
+            color: #124265;
+            /* Cor do ícone */
+          }
+
+          .icon-box .title {
+            margin-bottom: 10px;
+            /* Espaçamento entre o título e a descrição */
+            font-weight: bold;
+            /* Destaca o título */
+          }
+
+          .icon-box .description {
+            color: #666;
+            /* Ajusta a cor da descrição */
+          }
+        </style>
+
         <div class="row gy-4 mt-5">
           <div class="col-md-6 col-lg-3" data-aos="zoom-out" data-aos-delay="100">
             <div class="icon-box">
-              <div class="icon"><i class="bi bi-graph-up-arrow"></i></div>
-              <h4 class="title"><a href="">Dashboard</a></h4>
-              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+              <div class="icon"><i class="bi bi-server"></i>
+
+              </div>
+              <h4 class="title"><a href="">Engenharia de Dados</a></h4>
+              <p class="description">Transformamos dados brutos em bases estruturadas para decisões estratégicas.</p>
             </div>
-          </div><!--End Icon Box -->
+          </div><!-- End Icon Box -->
 
           <div class="col-md-6 col-lg-3" data-aos="zoom-out" data-aos-delay="200">
             <div class="icon-box">
               <div class="icon"><i class="bi bi-chat-dots"></i></div>
               <h4 class="title"><a href="">Consultoria</a></h4>
-              <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+              <p class="description">Planejamos soluções personalizadas que otimizam processos e potencializam
+                resultados.</p>
             </div>
-          </div><!--End Icon Box -->
+          </div><!-- End Icon Box -->
 
           <div class="col-md-6 col-lg-3" data-aos="zoom-out" data-aos-delay="300">
             <div class="icon-box">
-              <div class="icon"> <i class="bi bi-pie-chart"></i></div>
-              <h4 class="title"><a href="">Power BI</a></h4>
-              <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+              <div class="icon"><i class="bi bi-pie-chart"></i></div>
+              <h4 class="title"><a href="">Business Intelligence (BI)</a></h4>
+              <p class="description">Criamos dashboards interativos para análises claras e decisões inteligentes.</p>
             </div>
-          </div><!--End Icon Box -->
+          </div><!-- End Icon Box -->
 
           <div class="col-md-6 col-lg-3" data-aos="zoom-out" data-aos-delay="400">
             <div class="icon-box">
               <div class="icon"><i class="bi bi-diagram-3"></i></div>
               <h4 class="title"><a href="">Automação</a></h4>
-              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+              <p class="description">Automatizamos fluxos para aumentar eficiência e reduzir tarefas manuais.</p>
             </div>
-          </div><!--End Icon Box -->
-
+          </div><!-- End Icon Box -->
         </div>
+
       </div>
 
     </section><!-- /Hero Section -->
@@ -147,24 +182,32 @@
 
           <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
             <p>
-              Com experiência em Power BI, Excel avançado e automação, oferecemos serviços que vão de dashboards interativos a consultorias e treinamentos personalizados.
+              Com experiência em Power BI, Excel avançado e automação, oferecemos serviços que vão de dashboards
+              interativos a consultorias e treinamentos personalizados.
             </p>
-            <p style="font-weight: bold; color: #124265;">Nosso compromisso: </p  >
+            <p style="font-weight: bold; color: #124265;">Nosso compromisso: </p>
             <ul>
-              <li><i class="bi bi-check2-circle"></i> <span>Simplificar a tomada de decisão por meio de dados claros e objetivos.
-              </span></li>
-              <li><i class="bi bi-check2-circle"></i> <span>Otimizar processos e melhorar a eficiência operacional.
-              </span></li>
-              <li><i class="bi bi-check2-circle"></i> <span>Capacitar equipes para que dominem ferramentas de análise e visualização de dados.</span></li>
+              <li><i class="bi bi-check2-circle"></i> <span>Simplificar a tomada de decisão por meio de dados claros e
+                  objetivos.</span></li>
+              <li><i class="bi bi-check2-circle"></i> <span>Otimizar processos e melhorar a eficiência
+                  operacional.</span></li>
+              <li><i class="bi bi-check2-circle"></i> <span>Capacitar equipes para que dominem ferramentas de análise e
+                  visualização de dados.</span></li>
             </ul>
           </div>
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <p>Somos uma empresa dedicada a transformar dados em decisões estratégicas. Especializados em soluções de Business Intelligence, combinamos tecnologia avançada, expertise em análise de dados e um atendimento personalizado para entregar resultados que impulsionam negócios. </p>
+            <p>
+              Oferecemos soluções completas em dados, atendendo recorrências mensais e projetos sob demanda. Atuamos de
+              ponta a ponta, da arquitetura à entrega de visualizações estratégicas, passando pela engenharia de dados e
+              criação de Data Warehouses (DW) e Data Marts (DM). Combinamos tecnologia avançada e expertise em BI para
+              entregar resultados que impulsionam negócios.
+            </p>
             <a href="#" class="read-more"><span>Saiba Mais</span><i class="bi bi-arrow-right"></i></a>
           </div>
 
         </div>
+
 
       </div>
 
@@ -179,28 +222,32 @@
 
           <div class="col-lg-3 col-md-6">
             <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
+              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1"
+                class="purecounter"></span>
               <p>Clientes</p>
             </div>
           </div><!-- End Stats Item -->
 
           <div class="col-lg-3 col-md-6">
             <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
+              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1"
+                class="purecounter"></span>
               <p>Projetos</p>
             </div>
           </div><!-- End Stats Item -->
 
           <div class="col-lg-3 col-md-6">
             <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1" class="purecounter"></span>
+              <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1"
+                class="purecounter"></span>
               <p>Horas de Suporte</p>
             </div>
           </div><!-- End Stats Item -->
 
           <div class="col-lg-3 col-md-6">
             <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1" class="purecounter"></span>
+              <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1"
+                class="purecounter"></span>
               <p>Treinamentos Ministrados</p>
             </div>
           </div><!-- End Stats Item -->
@@ -225,16 +272,21 @@
             <h3>Transformamos Dados em Soluções Estratégicas
             </h3>
             <p class="fst-italic">
-              Utilizamos tecnologia e inteligência de negócios para oferecer soluções personalizadas que otimizam processos e impulsionam resultados.
+              Utilizamos tecnologia e inteligência de negócios para oferecer soluções personalizadas que otimizam
+              processos e impulsionam resultados.
             </p>
-            <p style="font-weight: bold; color: #124265;">Nossos serviços incluem: </p  >
+            <p style="font-weight: bold; color: #124265;">Nossos serviços incluem: </p>
             <ul>
-              <li><i class="bi bi-check2-all"></i> <span>Criação de dashboards interativos para análise estratégica.</span></li>
-              <li><i class="bi bi-check2-all"></i> <span>Consultoria em Business Intelligence e automação de processos.</span></li>
-              <li><i class="bi bi-check2-all"></i> <span>Integração e visualização de dados de múltiplas fontes.</span></li>
+              <li><i class="bi bi-check2-all"></i> <span>Criação de dashboards interativos para análise
+                  estratégica.</span></li>
+              <li><i class="bi bi-check2-all"></i> <span>Consultoria em Business Intelligence e automação de
+                  processos.</span></li>
+              <li><i class="bi bi-check2-all"></i> <span>Integração e visualização de dados de múltiplas fontes.</span>
+              </li>
             </ul>
             <p>
-              Combinamos expertise técnica e foco no cliente para garantir entregas que realmente fazem a diferença. Cada solução é pensada para atender às necessidades específicas do seu negócio.
+              Combinamos expertise técnica e foco no cliente para garantir entregas que realmente fazem a diferença.
+              Cada solução é pensada para atender às necessidades específicas do seu negócio.
             </p>
           </div>
         </div>
@@ -248,35 +300,62 @@
 
       <div class="container" data-aos="fade-up">
 
+        <!-- Texto introdutório -->
+        <div class="section-title">
+          <h2>Clientes</h2>
+          <p>
+            Nosso portfólio reflete a confiança de empresas que buscam excelência em soluções de dados.
+            Trabalhamos com organizações de diversos setores, entregando projetos personalizados e de alto impacto.
+            Conheça alguns dos nossos clientes, parceiros na jornada de inovação e sucesso.
+          </p>
+        </div>
+
         <div class="row gy-4">
 
           <div class="col-xl-2 col-md-3 col-6 client-logo">
-            <img src="assets/img/clients/client-1.png" class="img-fluid" alt="">
+            <img src="assets/img/clients/inpart.png" class="img-fluid" alt="Logo Cliente 1">
           </div><!-- End Client Item -->
 
           <div class="col-xl-2 col-md-3 col-6 client-logo">
-            <img src="assets/img/clients/client-2.png" class="img-fluid" alt="">
+            <img src="assets/img/clients/act.png" class="img-fluid" alt="Logo Cliente 2">
           </div><!-- End Client Item -->
 
           <div class="col-xl-2 col-md-3 col-6 client-logo">
-            <img src="assets/img/clients/client-3.png" class="img-fluid" alt="">
+            <img src="assets/img/clients/lider.png" class="img-fluid" alt="Logo Cliente 3">
           </div><!-- End Client Item -->
 
           <div class="col-xl-2 col-md-3 col-6 client-logo">
-            <img src="assets/img/clients/client-4.png" class="img-fluid" alt="">
+            <img src="assets/img/clients/correios.png" class="img-fluid" alt="Logo Cliente 4">
           </div><!-- End Client Item -->
-
-          <div class="col-xl-2 col-md-3 col-6 client-logo">
-            <img src="assets/img/clients/client-5.png" class="img-fluid" alt="">
-          </div><!-- End Client Item -->
-
-          <div class="col-xl-2 col-md-3 col-6 client-logo">
-            <img src="assets/img/clients/client-6.png" class="img-fluid" alt="">
-          </div><!-- End Client Item -->
-
         </div>
 
       </div>
+      
+<div class="mt-5">
+      <div class="container" data-aos="fade-up">
+
+        <!-- Texto introdutório -->
+        <div class="section-title">
+          <h2>Parceiros</h2>
+          <p>
+            Contamos com a colaboração de parceiros estratégicos que compartilham nossa visão de inovação e excelência.
+            Juntos, fortalecemos parcerias estratégicas que ampliam horizontes e desenvolvem soluções integradas,
+            agregando valor e promovendo o crescimento sustentável para todos os envolvidos. </p>
+        </div>
+
+        <div class="row gy-4">
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="assets/img/parceiros/pbi-trainer.png" class="img-fluid" alt="Logo Parceiro 1">
+          </div><!-- End Partner Item -->
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="assets/img/parceiros/rbi.png" class="img-fluid" alt="Logo Cliente 4">
+          </div><!-- End Client Item -->
+        </div>
+
+      </div>
+    </div>
 
     </section><!-- /Clients Section -->
 
@@ -293,7 +372,8 @@
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="swiper init-swiper" data-speed="600" data-delay="5000" data-breakpoints="{ &quot;320&quot;: { &quot;slidesPerView&quot;: 1, &quot;spaceBetween&quot;: 40 }, &quot;1200&quot;: { &quot;slidesPerView&quot;: 3, &quot;spaceBetween&quot;: 40 } }">
+        <div class="swiper init-swiper" data-speed="600" data-delay="5000"
+          data-breakpoints="{ &quot;320&quot;: { &quot;slidesPerView&quot;: 1, &quot;spaceBetween&quot;: 40 }, &quot;1200&quot;: { &quot;slidesPerView&quot;: 3, &quot;spaceBetween&quot;: 40 } }">
           <script type="application/json" class="swiper-config">
             {
               "loop": true,
@@ -325,7 +405,8 @@
               <div class="testimonial-item" "="">
             <p>
               <i class=" bi bi-quote quote-icon-left"></i>
-                <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span>
+                <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus.
+                  Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span>
                 <i class="bi bi-quote quote-icon-right"></i>
                 </p>
                 <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
@@ -338,7 +419,8 @@
               <div class="testimonial-item">
                 <p>
                   <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
+                  <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid malis quorum
+                    velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
                   <i class="bi bi-quote quote-icon-right"></i>
                 </p>
                 <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
@@ -351,7 +433,8 @@
               <div class="testimonial-item">
                 <p>
                   <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</span>
+                  <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis
+                    minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</span>
                   <i class="bi bi-quote quote-icon-right"></i>
                 </p>
                 <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
@@ -364,7 +447,8 @@
               <div class="testimonial-item">
                 <p>
                   <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</span>
+                  <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat dolor enim
+                    duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</span>
                   <i class="bi bi-quote quote-icon-right"></i>
                 </p>
                 <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
@@ -377,7 +461,8 @@
               <div class="testimonial-item">
                 <p>
                   <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.</span>
+                  <span>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam sunt
+                    culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.</span>
                   <i class="bi bi-quote quote-icon-right"></i>
                 </p>
                 <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
@@ -413,17 +498,19 @@
             <div class="service-item item-cyan position-relative">
               <div class="icon">
                 <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174"></path>
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5"
+                    d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174">
+                  </path>
                 </svg>
-                <i class="bi bi-graph-up"></i>
+                <i class="bi bi-server"></i>
 
               </div>
               <a href="service-details.html" class="stretched-link">
-                <h3>Dashboards Interativos
+                <h3>Engenharia de Dados
 
                 </h3>
               </a>
-              <p>Desenvolvimento de painéis personalizados para análise estratégica e tomada de decisão.</p>
+              <p>Transformação de dados brutos em informações estruturadas para decisões rápidas e estratégicas.</p>
             </div>
           </div><!-- End Service Item -->
 
@@ -431,11 +518,13 @@
             <div class="service-item item-orange position-relative">
               <div class="icon">
                 <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,582.0697525312426C382.5290701553225,586.8405444964366,449.9789794690241,525.3245884688669,502.5850820975895,461.55621195738473C556.606425686781,396.0723002908107,615.8543463187945,314.28637112970534,586.6730223649479,234.56875336149918C558.9533121215079,158.8439757836574,454.9685369536778,164.00468322053177,381.49747125262974,130.76875717737553C312.15926192815925,99.40240125094834,248.97055460311594,18.661163978235184,179.8680185752513,50.54337015887873C110.5421016452524,82.52863877960104,119.82277516462835,180.83849132639028,109.12597500060166,256.43424936330496C100.08760227029461,320.3096726198365,92.17705696193138,384.0621239912766,124.79988738764834,439.7174275375508C164.83382741302287,508.01625554203684,220.96474134820875,577.5009287672846,300,582.0697525312426"></path>
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5"
+                    d="M300,582.0697525312426C382.5290701553225,586.8405444964366,449.9789794690241,525.3245884688669,502.5850820975895,461.55621195738473C556.606425686781,396.0723002908107,615.8543463187945,314.28637112970534,586.6730223649479,234.56875336149918C558.9533121215079,158.8439757836574,454.9685369536778,164.00468322053177,381.49747125262974,130.76875717737553C312.15926192815925,99.40240125094834,248.97055460311594,18.661163978235184,179.8680185752513,50.54337015887873C110.5421016452524,82.52863877960104,119.82277516462835,180.83849132639028,109.12597500060166,256.43424936330496C100.08760227029461,320.3096726198365,92.17705696193138,384.0621239912766,124.79988738764834,439.7174275375508C164.83382741302287,508.01625554203684,220.96474134820875,577.5009287672846,300,582.0697525312426">
+                  </path>
                 </svg>
                 <i class="bi bi-people"></i>
               </div>
-              <a href="service-details.html" class="stretched-link">
+              <a href="consultoria-details.html" class="stretched-link">
                 <h3>Consultoria em BI</h3>
               </a>
               <p>Diagnóstico e implementação de soluções completas em Business Intelligence.
@@ -447,12 +536,14 @@
             <div class="service-item item-teal position-relative">
               <div class="icon">
                 <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,541.5067337569781C382.14930387511276,545.0595476570109,479.8736841581634,548.3450877840088,526.4010558755058,480.5488172755941C571.5218469581645,414.80211281144784,517.5187510058486,332.0715597781072,496.52539010469104,255.14436215662573C477.37192572678356,184.95920475031193,473.57363656557914,105.61284051026155,413.0603344069578,65.22779650032875C343.27470386102294,18.654635553484475,251.2091493199835,5.337323636656869,175.0934190732945,40.62881213300186C97.87086631185822,76.43348514350839,51.98124368387456,156.15599469081315,36.44837278890362,239.84606092416172C21.716077023791087,319.22268207091537,43.775223500013084,401.1760424656574,96.891909868211,461.97329694683043C147.22146801428983,519.5804099606455,223.5754009179313,538.201503339737,300,541.5067337569781"></path>
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5"
+                    d="M300,541.5067337569781C382.14930387511276,545.0595476570109,479.8736841581634,548.3450877840088,526.4010558755058,480.5488172755941C571.5218469581645,414.80211281144784,517.5187510058486,332.0715597781072,496.52539010469104,255.14436215662573C477.37192572678356,184.95920475031193,473.57363656557914,105.61284051026155,413.0603344069578,65.22779650032875C343.27470386102294,18.654635553484475,251.2091493199835,5.337323636656869,175.0934190732945,40.62881213300186C97.87086631185822,76.43348514350839,51.98124368387456,156.15599469081315,36.44837278890362,239.84606092416172C21.716077023791087,319.22268207091537,43.775223500013084,401.1760424656574,96.891909868211,461.97329694683043C147.22146801428983,519.5804099606455,223.5754009179313,538.201503339737,300,541.5067337569781">
+                  </path>
                 </svg>
                 <i class="bi bi-gear"></i>
 
               </div>
-              <a href="service-details.html" class="stretched-link">
+              <a href="automacao-details.html" class="stretched-link">
                 <h3>Automação de Processos
 
                 </h3>
@@ -465,19 +556,21 @@
             <div class="service-item item-red position-relative">
               <div class="icon">
                 <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,503.46388370962813C374.79870501325706,506.71871716319447,464.8034551963731,527.1746412648533,510.4981551193396,467.86667711651364C555.9287308511215,408.9015244558933,512.6030010748507,327.5744911775523,490.211057578863,256.5855673507754C471.097692560561,195.9906835881958,447.69079081568157,138.11976852964426,395.19560036434837,102.3242989838813C329.3053358748298,57.3949838291264,248.02791733380457,8.279543830951368,175.87071277845988,42.242879143198664C103.41431057327972,76.34704239035025,93.79494320519305,170.9812938413882,81.28167332365135,250.07896920659033C70.17666984294237,320.27484674793965,64.84698225790005,396.69656628748305,111.28512138212992,450.4950937839243C156.20124167950087,502.5303643271138,231.32542653798444,500.4755392045468,300,503.46388370962813"></path>
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5"
+                    d="M300,503.46388370962813C374.79870501325706,506.71871716319447,464.8034551963731,527.1746412648533,510.4981551193396,467.86667711651364C555.9287308511215,408.9015244558933,512.6030010748507,327.5744911775523,490.211057578863,256.5855673507754C471.097692560561,195.9906835881958,447.69079081568157,138.11976852964426,395.19560036434837,102.3242989838813C329.3053358748298,57.3949838291264,248.02791733380457,8.279543830951368,175.87071277845988,42.242879143198664C103.41431057327972,76.34704239035025,93.79494320519305,170.9812938413882,81.28167332365135,250.07896920659033C70.17666984294237,320.27484674793965,64.84698225790005,396.69656628748305,111.28512138212992,450.4950937839243C156.20124167950087,502.5303643271138,231.32542653798444,500.4755392045468,300,503.46388370962813">
+                  </path>
                 </svg>
                 <i class="bi bi-journal-bookmark"></i>
 
               </div>
-              <a href="service-details.html" class="stretched-link">
+              <a href="trein-personalizados.html" class="stretched-link">
                 <h3>Treinamentos Personalizados
 
                 </h3>
               </a>
               <p>Capacitação em ferramentas como Power BI e Excel avançado para equipes e profissionais.
               </p>
-              <a href="service-details.html" class="stretched-link"></a>
+              <a href="trein-personalizados.html" class="stretched-link"></a>
             </div>
           </div><!-- End Service Item -->
 
@@ -485,18 +578,20 @@
             <div class="service-item item-indigo position-relative">
               <div class="icon">
                 <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,532.3542879108572C369.38199826031484,532.3153073249985,429.10787420159085,491.63046689027357,474.5244479745417,439.17860296908856C522.8885846962883,383.3225815378663,569.1668002868075,314.3205725914397,550.7432151929288,242.7694973846089C532.6665558377875,172.5657663291529,456.2379748765914,142.6223662098291,390.3689995646985,112.34683881706744C326.66090330228417,83.06452184765237,258.84405631176094,53.51806209861945,193.32584062364296,78.48882559362697C121.61183558270385,105.82097193414197,62.805066853699245,167.19869350419734,48.57481801355237,242.6138429142374C34.843463184063346,315.3850353017275,76.69343916112496,383.4422959591041,125.22947124332185,439.3748458443577C170.7312796277747,491.8107796887764,230.57421082200815,532.3932930995766,300,532.3542879108572"></path>
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5"
+                    d="M300,532.3542879108572C369.38199826031484,532.3153073249985,429.10787420159085,491.63046689027357,474.5244479745417,439.17860296908856C522.8885846962883,383.3225815378663,569.1668002868075,314.3205725914397,550.7432151929288,242.7694973846089C532.6665558377875,172.5657663291529,456.2379748765914,142.6223662098291,390.3689995646985,112.34683881706744C326.66090330228417,83.06452184765237,258.84405631176094,53.51806209861945,193.32584062364296,78.48882559362697C121.61183558270385,105.82097193414197,62.805066853699245,167.19869350419734,48.57481801355237,242.6138429142374C34.843463184063346,315.3850353017275,76.69343916112496,383.4422959591041,125.22947124332185,439.3748458443577C170.7312796277747,491.8107796887764,230.57421082200815,532.3932930995766,300,532.3542879108572">
+                  </path>
                 </svg>
                 <i class="bi bi-calendar4-week icon"></i><i class="bi bi-bar-chart"></i>
 
               </div>
-              <a href="service-details.html" class="stretched-link">
+              <a href="analise-e-integ.html" class="stretched-link">
                 <h3>Análise e Integração de Dados
 
                 </h3>
               </a>
               <p>Conexão e unificação de múltiplas fontes de dados em relatórios inteligentes.</p>
-              <a href="service-details.html" class="stretched-link"></a>
+              <a href="analise-e-integ.html" class="stretched-link"></a>
             </div>
           </div><!-- End Service Item -->
 
@@ -504,18 +599,20 @@
             <div class="service-item item-pink position-relative">
               <div class="icon">
                 <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,566.797414625762C385.7384707136149,576.1784315230908,478.7894351017131,552.8928747891023,531.9192734346935,484.94944893311C584.6109503024035,417.5663521118492,582.489472248146,322.67544863468447,553.9536738515405,242.03673114598146C529.1557734026468,171.96086150256528,465.24506316201064,127.66468636344209,395.9583748389544,100.7403814666027C334.2173773831606,76.7482773500951,269.4350130405921,84.62216499799875,207.1952322260088,107.2889140133804C132.92018162631612,134.33871894543012,41.79353780512637,160.00259165414826,22.644507872594943,236.69541883565114C3.319112789854554,314.0945973066697,72.72355303640163,379.243833228382,124.04198916343866,440.3218312028393C172.9286146004772,498.5055451809895,224.45579914871206,558.5317968840102,300,566.797414625762"></path>
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5"
+                    d="M300,566.797414625762C385.7384707136149,576.1784315230908,478.7894351017131,552.8928747891023,531.9192734346935,484.94944893311C584.6109503024035,417.5663521118492,582.489472248146,322.67544863468447,553.9536738515405,242.03673114598146C529.1557734026468,171.96086150256528,465.24506316201064,127.66468636344209,395.9583748389544,100.7403814666027C334.2173773831606,76.7482773500951,269.4350130405921,84.62216499799875,207.1952322260088,107.2889140133804C132.92018162631612,134.33871894543012,41.79353780512637,160.00259165414826,22.644507872594943,236.69541883565114C3.319112789854554,314.0945973066697,72.72355303640163,379.243833228382,124.04198916343866,440.3218312028393C172.9286146004772,498.5055451809895,224.45579914871206,558.5317968840102,300,566.797414625762">
+                  </path>
                 </svg>
                 <i class="bi bi-file-earmark-bar-graph"></i>
 
               </div>
-              <a href="service-details.html" class="stretched-link">
+              <a href="rel-executivos.html" class="stretched-link">
                 <h3>Relatórios Executivos
 
                 </h3>
               </a>
               <p>Produção de relatórios detalhados e objetivos para tomadas de decisão estratégicas.</p>
-              <a href="service-details.html" class="stretched-link"></a>
+              <a href="rel-executivos.html" class="stretched-link"></a>
             </div>
           </div><!-- End Service Item -->
 
@@ -524,6 +621,140 @@
       </div>
 
     </section><!-- /Services Section -->
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Pricing</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-4 justify-content-center">
+
+          <!-- Basic Plan -->
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="pricing-card">
+              <h3>Basic Plan</h3>
+              <div class="price">
+                <span class="currency">$</span>
+                <span class="amount">9.9</span>
+                <span class="period">/ month</span>
+              </div>
+              <p class="description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam.</p>
+
+              <h4>Featured Included:</h4>
+              <ul class="features-list">
+                <li>
+                  <i class="bi bi-check-circle-fill"></i>
+                  Duis aute irure dolor
+                </li>
+                <li>
+                  <i class="bi bi-check-circle-fill"></i>
+                  Excepteur sint occaecat
+                </li>
+                <li>
+                  <i class="bi bi-check-circle-fill"></i>
+                  Nemo enim ipsam voluptatem
+                </li>
+              </ul>
+
+              <a href="#" class="btn btn-primary">
+                Buy Now
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Standard Plan -->
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="pricing-card popular">
+              <div class="popular-badge">Most Popular</div>
+              <h3>Standard Plan</h3>
+              <div class="price">
+                <span class="currency">$</span>
+                <span class="amount">19.9</span>
+                <span class="period">/ month</span>
+              </div>
+              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum.</p>
+
+              <h4>Featured Included:</h4>
+              <ul class="features-list">
+                <li>
+                  <i class="bi bi-check-circle-fill"></i>
+                  Lorem ipsum dolor sit amet
+                </li>
+                <li>
+                  <i class="bi bi-check-circle-fill"></i>
+                  Consectetur adipiscing elit
+                </li>
+                <li>
+                  <i class="bi bi-check-circle-fill"></i>
+                  Sed do eiusmod tempor
+                </li>
+                <li>
+                  <i class="bi bi-check-circle-fill"></i>
+                  Ut labore et dolore magna
+                </li>
+              </ul>
+
+              <a href="#" class="btn btn-light">
+                Buy Now
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Premium Plan -->
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="pricing-card">
+              <h3>Premium Plan</h3>
+              <div class="price">
+                <span class="currency">$</span>
+                <span class="amount">39.9</span>
+                <span class="period">/ month</span>
+              </div>
+              <p class="description">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae.</p>
+
+              <h4>Featured Included:</h4>
+              <ul class="features-list">
+                <li>
+                  <i class="bi bi-check-circle-fill"></i>
+                  Temporibus autem quibusdam
+                </li>
+                <li>
+                  <i class="bi bi-check-circle-fill"></i>
+                  Saepe eveniet ut et voluptates
+                </li>
+                <li>
+                  <i class="bi bi-check-circle-fill"></i>
+                  Nam libero tempore soluta
+                </li>
+                <li>
+                  <i class="bi bi-check-circle-fill"></i>
+                  Cumque nihil impedit quo
+                </li>
+                <li>
+                  <i class="bi bi-check-circle-fill"></i>
+                  Maxime placeat facere possimus
+                </li>
+              </ul>
+
+              <a href="#" class="btn btn-primary">
+                Buy Now
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Pricing Section -->
 
     <!-- Call To Action Section -->
     <section id="call-to-action" class="call-to-action section accent-background">
@@ -534,7 +765,8 @@
             <div class="text-center">
               <h3>Transforme Seus Dados
               </h3>
-              <p>Aproveite o poder dos dados para otimizar seus processos e impulsionar suas decisões estratégicas. Entre em contato agora e comece sua transformação!</p>
+              <p>Aproveite o poder dos dados para otimizar seus processos e impulsionar suas decisões estratégicas.
+                Entre em contato agora e comece sua transformação!</p>
               <a class="cta-btn" href="#">Iniciar Agora</a>
             </div>
           </div>
@@ -550,7 +782,8 @@
       <div class="container section-title" data-aos="fade-up">
         <h2>Nossos Projetos</h2>
         <p>
-          Conheça os projetos que transformaram dados em decisões estratégicas. De dashboards interativos a integrações de dados, entregamos soluções personalizadas que geram impacto real nos negócios.</p>
+          Conheça os projetos que transformaram dados em decisões estratégicas. De dashboards interativos a integrações
+          de dados, entregamos soluções personalizadas que geram impacto real nos negócios.</p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -560,8 +793,8 @@
           <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
             <li data-filter="*" class="filter-active">Todos</li>
             <li data-filter=".filter-app">Financeiro</li>
-           <!-- <li data-filter=".filter-product">implementação futura</li> -->
-           <!-- <li data-filter=".filter-branding">implementação futura</li> -->
+            <!-- <li data-filter=".filter-product">implementação futura</li> -->
+            <!-- <li data-filter=".filter-branding">implementação futura</li> -->
           </ul><!-- End Portfolio Filters -->
 
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
@@ -570,35 +803,29 @@
               <img src="assets/img/portfolio/dashboard1-inicial.png" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>Análise de Vendas</h4>
-                <p>Painel interativo para acompanhar o desempenho de vendas, identificar tendências e tomar decisões baseadas em dados.</p>
-                <a href="assets/img/portfolio/dashboard1-inicial.png" title="" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="Mais detalhes" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <p>Painel interativo para acompanhar o desempenho de vendas, identificar tendências e tomar decisões
+                  baseadas em dados.</p>
+                <a href="assets/img/portfolio/dashboard1-inicial.png" title="" data-gallery="portfolio-gallery-app"
+                  class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="Mais detalhes" class="details-link"><i
+                    class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 
-        
+
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
               <img src="assets/img/portfolio/dashboard2-inicial.png" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>Análise de Vendas</h4>
                 <p>Acesse os principais KPIs da área de vendas e analise os dados de maneira rápida e fácil.</p>
-                <a href="assets/img/portfolio/dashboard2-inicial.png" title="" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="Mais detalhes" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <a href="assets/img/portfolio/dashboard2-inicial.png" title="" data-gallery="portfolio-gallery-app"
+                  class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="Mais detalhes" class="details-link"><i
+                    class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 
-           
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-7.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 3</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-7.jpg" title="" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="Mais detalhes" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
 
 
           </div><!-- End Portfolio Container -->
@@ -615,7 +842,7 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Quem Faz a Diferença</h2>
-        <p>A expertise de um especialista focado em transformar dados em decisões estratégicas.
+        <p>Nosso time é formado por pessoas altamente qualificadas, com habilidades diversas e complementares. Cada membro da equipe traz uma expertise única, unindo conhecimento técnico e visão estratégica para transformar dados em soluções poderosas. São essas habilidades e o compromisso com a excelência que nos permitem criar impacto real e gerar resultados extraordinários.
         </p>
       </div><!-- End Section Title -->
 
@@ -628,15 +855,102 @@
               <div class="member-img">
                 <img src="assets/img/team/andre.jpg" class="img-fluid" alt="">
                 <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+                  <a href="https://www.linkedin.com/in/andr%C3%A9camillobi/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                  <a href="https://www.youtube.com/@andrecamillonegocios" target="_blank">  <i class="bi bi-youtube"></i>
+                  </a>
+                  <a href="mailto:andrecamillonegocios@outlook.com">
+                    <i class="bi bi-envelope"></i>
+                  </a>
+                  
+                  </i></a>
+                  <a href="https://wa.me/5511940372311" target="_blank">
+                    <i class="bi bi-whatsapp"></i>
+                  </a>
                 </div>
               </div>
               <div class="member-info">
                 <h4>André Camillo</h4>
-                <span>Fundador e Especialista em BI</span>
+                <span> Fundador e Estrategista de Negócios</span>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="assets/img/team/func1.jpg" class="img-fluid" alt=""  width="600" height="auto">
+                <div class="social">
+                  <a href="https://www.linkedin.com/in/nwoye-chukwudi/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="bi bi-linkedin"></i></a>
+                  
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Nwoye (Emmanuel) Chukwudi</h4>
+                <span> Analista de Dados (Excel e Power BI)</span>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="assets/img/team/func2.jpg" class="img-fluid" alt=""  width="600" height="auto">
+                <div class="social">
+                  <a href="https://www.linkedin.com/in/ezequielpedreira" target="_blank"><i class="bi bi-linkedin"></i></a>
+                  
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Ezequiel Pedreira</h4>
+                <span>Especialista em Data Viz</span>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="assets/img/team/func3.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="https://www.linkedin.com/in/roberson-gabriel-561b68174/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                  
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Roberson Gabriel </h4>
+                <span>Especialista em BI e Power Plataform</span>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="assets/img/team/func4.jpg" class="img-fluid" alt="" width="600" height="auto">
+                <div class="social">
+                  <a href="https://www.linkedin.com/in/marco-alencastro/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                  
+                </div>
+              </div>
+              <div class="member-info">
+                <h4> Marco Aurélio Alencastro</h4>
+                <span>Engenheiro analítico</span>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="assets/img/team/func5.jpg" class="img-fluid" alt="" width="600" height="auto">
+                <div class="social">
+                  <a href="https://www.linkedin.com/in/estevao-zeco" target="_blank"><i class="bi bi-linkedin"></i></a>
+                  
+                </div>
+              </div>
+              <div class="member-info">
+                <h4> Estevão Zeco </h4>
+                <span>Estatístico, Cientista de Dados e Consltor de Monitoramento e Avaliação</span>
               </div>
             </div>
           </div><!-- End Team Member -->
@@ -649,7 +963,7 @@
 
     </section><!-- /Team Section -->
 
- 
+
 
     <!-- Faq Section -->
     <section id="faq" class="faq section light-background">
@@ -673,7 +987,8 @@
               <div class="faq-item faq-active">
                 <h3>Non consectetur a erat nam at lectus urna duis?</h3>
                 <div class="faq-content">
-                  <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</p>
+                  <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur
+                    gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div><!-- End Faq item-->
@@ -681,7 +996,9 @@
               <div class="faq-item">
                 <h3>Feugiat scelerisque varius morbi enim nunc faucibus?</h3>
                 <div class="faq-content">
-                  <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
+                  <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet
+                    id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque
+                    elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div><!-- End Faq item-->
@@ -689,7 +1006,10 @@
               <div class="faq-item">
                 <h3>Dolor sit amet consectetur adipiscing elit pellentesque?</h3>
                 <div class="faq-content">
-                  <p>Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis</p>
+                  <p>Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar
+                    elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque
+                    eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis
+                    sed odio morbi quis</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div><!-- End Faq item-->
@@ -697,7 +1017,9 @@
               <div class="faq-item">
                 <h3>Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?</h3>
                 <div class="faq-content">
-                  <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
+                  <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet
+                    id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque
+                    elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div><!-- End Faq item-->
@@ -705,7 +1027,9 @@
               <div class="faq-item">
                 <h3>Tempus quam pellentesque nec nam aliquam sem et tortor?</h3>
                 <div class="faq-content">
-                  <p>Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in</p>
+                  <p>Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in.
+                    Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est.
+                    Purus gravida quis blandit turpis cursus in</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div><!-- End Faq item-->
@@ -713,7 +1037,8 @@
               <div class="faq-item">
                 <h3>Perspiciatis quod quo quos nulla quo illum ullam?</h3>
                 <div class="faq-content">
-                  <p>Enim ea facilis quaerat voluptas quidem et dolorem. Quis et consequatur non sed in suscipit sequi. Distinctio ipsam dolore et.</p>
+                  <p>Enim ea facilis quaerat voluptas quidem et dolorem. Quis et consequatur non sed in suscipit sequi.
+                    Distinctio ipsam dolore et.</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div><!-- End Faq item-->
@@ -742,7 +1067,9 @@
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <div class="mb-4" data-aos="fade-up" data-aos-delay="200">
-          <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus" frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe style="border:0; width: 100%; height: 270px;"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus"
+            frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div><!-- End Google Maps -->
 
         <div class="row gy-4">
@@ -757,7 +1084,7 @@
                 </div>
               </div><!-- End Info Item -->
             </div>
-          
+
             <div class="col-lg-4">
               <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
                 <i class="bi bi-telephone flex-shrink-0"></i>
@@ -767,7 +1094,7 @@
                 </div>
               </div><!-- End Info Item -->
             </div>
-          
+
             <div class="col-lg-4">
               <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
                 <i class="bi bi-envelope flex-shrink-0"></i>
@@ -778,10 +1105,6 @@
               </div><!-- End Info Item -->
             </div>
           </div>
-          
-
-
-
         </div>
 
       </div>
@@ -798,7 +1121,9 @@
           <a href="index.html" class="logo d-flex align-items-center">
             <span class="sitename">André Camillo</span>
           </a>
-          <p>Somos uma empresa especializada em soluções de Business Intelligence, oferecendo consultoria, criação de dashboards e treinamentos personalizados para transformar dados em decisões estratégicas que impulsionam os resultados de negócios.</p>
+          <p>Somos uma empresa especializada em soluções de Business Intelligence, oferecendo consultoria, criação de
+            dashboards e treinamentos personalizados para transformar dados em decisões estratégicas que impulsionam os
+            resultados de negócios.</p>
           <div class="social-links d-flex mt-4">
             <a href=""><i class="bi bi-twitter-x"></i></a>
             <a href=""><i class="bi bi-facebook"></i></a>
@@ -842,17 +1167,19 @@
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">2025</strong> <span>Todos os direitos reservados.</span></p>
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">2025</strong> <span>Todos os direitos reservados.</span>
+      </p>
       <div class="credits">
-  
-        Desenvolvidor por <a href=“www.linkedin.com/in/daniel-bragga>Daniel Braga
+        Desenvolvido por <a href="https://www.linkedin.com/in/daniel-bragga" target="_blank">Daniel Braga</a>
       </div>
+      
     </div>
 
   </footer>
 
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Preloader -->
   <div id="preloader"></div>
