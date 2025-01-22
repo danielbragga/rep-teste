@@ -1814,14 +1814,13 @@ section,
 }
 
 .faq .faq-container .faq-item h3:hover {
-  color: var(--accent-color);
+  color: black;
 }
 
 .faq .faq-container .faq-item .faq-content {
   display: grid;
   grid-template-rows: 0fr;
   transition: 0.3s ease-in-out;
-  visibility: hidden;
   opacity: 0;
 }
 
