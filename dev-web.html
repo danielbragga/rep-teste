@@ -43,7 +43,7 @@
     <link href="assets/css/main.css" rel="stylesheet" />
   </head>
 
-  <body class="portfolio-details-page">
+  <body class="service-details-page">
     <header id="header" class="header d-flex align-items-center sticky-top">
       <div
         class="container-fluid container-xl position-relative d-flex align-items-center"
@@ -53,7 +53,7 @@
             <img
               src="assets/img/logo-andre-camillo.jpg"
               alt="Logo"
-              style="max-width: 200px; width: 145%; height: 245px"
+              style="max-width: 200px; width: 145%; height: 255px"
             />
           </div>
         </a>
@@ -61,7 +61,7 @@
         <nav id="navmenu" class="navmenu">
           <ul>
             <li>
-              <a href="index.html#hero" class="active">Inicio<br /></a>
+               <a href="index.html#hero" class="active">Inicio<br /></a>
             </li>
             <li><a href="index.html#about">Sobre</a></li>
             <li><a href="index.html#services">Serviços</a></li>
@@ -81,169 +81,91 @@
       <!-- Page Title -->
       <div class="page-title accent-background">
         <div class="container">
-          <h1>Portfólio</h1>
+          <h1>Serviços</h1>
           <nav class="breadcrumbs">
             <ol>
               <li><a href="index.html">Início</a></li>
-              <li class="current">Portfólio</li>
+              <li class="current">Serviços</li>
             </ol>
           </nav>
         </div>
       </div>
       <!-- End Page Title -->
 
-      <!-- Portfolio Details Section -->
-      <section id="portfolio-details" class="portfolio-details section">
-        <div class="container" data-aos="fade-up">
-          <div class="portfolio-details-slider swiper init-swiper">
-            <script type="application/json" class="swiper-config">
-              {
-                "loop": true,
-                "speed": 600,
-                "autoplay": {
-                  "delay": 5000
-                },
-                "slidesPerView": "auto",
-                "navigation": {
-                  "nextEl": ".swiper-button-next",
-                  "prevEl": ".swiper-button-prev"
-                },
-                "pagination": {
-                  "el": ".swiper-pagination",
-                  "type": "bullets",
-                  "clickable": true
-                }
+      <!-- Service Details Section -->
+      <section id="service-details" class="service-details section">
+        <div class="container">
+          <div class="row gy-4">
+            <style>
+              .justified-text {
+                text-align: justify; /* Justifica o texto */
+                font-size: 1rem; /* Ajuste do tamanho da fonte */
+                line-height: 1.6; /* Espaçamento entre linhas para melhorar a leitura */
+                margin: 15px 0; /* Margem para separação visual */
               }
-            </script>
-            <div class="swiper-wrapper align-items-center">
-              <div class="swiper-slide">
-                <img
-                  src="assets/img/portfolio/portfolio-detalhado/dash1-detail.png"
-                  alt=""
-                />
+            </style>
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+              <div class="services-list">
+                <a href="service-details.html">Engenharia de Dados</a>
+                <a href="consultoria-details.html">Consultoria em BI</a>
+                <a href="automacao-details.html" 
+                  >Automação de Processos</a
+                >
+                <a href="trein-personalizados.html"
+                  >Treinamentos Personalizados</a
+                >
+                <a href="dev-web.html" class="active">Desenvolvimento web e de Aplicativos</a>
+                <a href="mkt-digital.html">Marketing Digital e Tráfego Pago</a>
+                <a href="ment-aval.html">Mentoria e Avaliação de Carreira</a>
               </div>
 
-              <div class="swiper-slide">
-                <img
-                  src="assets/img/portfolio/portfolio-detalhado/dash1-detail2.png"
-                  alt=""
-                />
-              </div>
-
-              <div class="swiper-slide">
-                <img
-                  src="assets/img/portfolio/portfolio-detalhado/dash1-detail3.png"
-                  alt=""
-                />
-              </div>
-
-              <div class="swiper-slide">
-                <img
-                  src="assets/img/portfolio/portfolio-detalhado/dash1-detail4.png"
-                  alt=""
-                />
-              </div>
-            </div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-pagination"></div>
-          </div>
-
-          <div class="row justify-content-between gy-4 mt-4">
-            <div class="col-lg-8" data-aos="fade-up">
-              <div class="portfolio-description">
-                <h2>
-                  Dashboard de Análise de Vendas: Transformando Dados em
-                  Decisões
-                </h2>
-                <p>
-                  Imagine ter todos os dados de vendas da sua empresa ao alcance
-                  das mãos, prontos para serem analisados de maneira visual e
-                  estratégica. Foi com esse objetivo que projetamos um exemplo
-                  de dashboard de análise de vendas, pensado para revolucionar a
-                  forma como empresas enxergam e utilizam suas informações
-                  comerciais.
-                </p>
-                <p>
-                  Este dashboard integra dados de diferentes sistemas e os
-                  transforma em insights acionáveis por meio de gráficos
-                  dinâmicos e interativos. A interface intuitiva foi criada para
-                  fornecer uma visão geral do desempenho das vendas e destacar
-                  métricas críticas, como:
-                </p>
-                <ul>
-                  <li>
-                    <i class="bi bi-check-circle"></i>
-                    <strong>Ranking de Vendedores por Faturamento:</strong>
-                    Identifique os líderes da sua equipe e as áreas que precisam
-                    de atenção.
-                  </li>
-                  <li>
-                    <i class="bi bi-check-circle"></i>
-                    <strong>Visão Geral de Desempenho:</strong> Monitore
-                    tendências, picos de vendas e períodos de baixa para criar
-                    estratégias mais eficazes.
-                  </li>
-                  <li>
-                    <i class="bi bi-check-circle"></i>
-                    <strong>Simulações de Cenários:</strong> Teste estratégias e
-                    veja o impacto direto nas métricas de vendas antes de
-                    implementá-las.
-                  </li>
-                </ul>
-                <p>
-                  O design é moderno, responsivo e pensado para atender às
-                  necessidades de gerentes, diretores e equipes operacionais,
-                  tornando a tomada de decisão mais rápida, precisa e baseada em
-                  fatos.
-                </p>
-
-                <p>
-                  Este projeto é um exemplo de como nossa equipe pode
-                  desenvolver soluções personalizadas para empresas que desejam
-                  transformar seus dados em uma poderosa ferramenta competitiva.
-                  Mais do que números, entregamos resultados e visão estratégica
-                  para o futuro.
-                </p>
-
-                <p>
-                  Quer explorar como um dashboard como este pode transformar o
-                  seu negócio? Entre em contato conosco e vamos criar algo
-                  incrível juntos!
-                </p>
-              </div>
+              <h4>Desenvolvimento de Aplicativos e Web: Soluções Personalizadas para seu Negócio   </h4>
+              <p class="justified-text">
+                Somos especializados em criar soluções web e aplicativos sob medida, com foco na inovação e experiência do usuário.  
+              </p>
             </div>
 
-            <div class="col-lg-3" data-aos="fade-up" data-aos-delay="100">
-              <div class="portfolio-info">
-                <h3>Informações do Projeto</h3>
-                <ul>
-                  <li><strong>Categoria:</strong> Financeiro</li>
-
-                  <li>
-                    <strong>URL de Demonstração:</strong>
-                    <a
-                      href="https://app.powerbi.com/view?r=eyJrIjoiMGI0NjkxNTMtZDJiMi00MGM0LTgzMDgtNjk1MzQyNDhjYzNkIiwidCI6ImM4NTc2Y2RmLWZkYmQtNDQ4OS1hNDlhLWFmZmY1MmVhYzY2YSJ9"
-                      target="_blank"
-                    >
-                      Acesse Aqui
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://app.powerbi.com/view?r=eyJrIjoiMGI0NjkxNTMtZDJiMi00MGM0LTgzMDgtNjk1MzQyNDhjYzNkIiwidCI6ImM4NTc2Y2RmLWZkYmQtNDQ4OS1hNDlhLWFmZmY1MmVhYzY2YSJ9"
-                      class="btn-visit align-self-start"
-                      target="_blank"
-                      >Visite o Dashboard</a
-                    >
-                  </li>
-                </ul>
-              </div>
+            <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+              <img
+                src="assets/img/servicos/dev-web.webp"
+                alt="Desenvolvimento web e de Aplicativos"
+                class="img-fluid services-img"
+                style="margin-left: 100px"
+                width="600"
+              />
+              <h3>
+                Nosso time, juntamente com parceiros estratégicos, oferece soluções completas, desde a concepção até a entrega final, garantindo plataformas robustas e eficientes.
+              </h3>
+             
+              <ul>
+                <li>
+                  <i class="bi bi-check-circle"></i>
+                  <span
+                    >Desenvolvimento de aplicativos personalizados para diferentes dispositivos.</span
+                  >
+                </li>
+                <li>
+                  <i class="bi bi-check-circle"></i>
+                  <span>
+                    Criação de soluções web escaláveis e integradas.
+                  </span>
+                </li>
+                <li>
+                  <i class="bi bi-check-circle"></i>
+                  <span>
+                    Foco na experiência do usuário e design responsivo
+                  </span>
+                </li>
+              </ul>
+              <p class="justified-text">
+                Entregamos resultados com tecnologia de ponta, garantindo que sua empresa tenha as ferramentas necessárias para se destacar no mercado digital, sempre com soluções ágeis e adaptáveis às necessidades do seu negócio.              </p>
+             
             </div>
           </div>
         </div>
       </section>
-      <!-- /Portfolio Details Section -->
+
+      <!-- /Service Details Section -->
     </main>
 
     <footer id="footer" class="footer light-background">
